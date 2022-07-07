@@ -2,22 +2,22 @@ package Trabalho;
 
 public class Prova {
 
-    private Integer nota;
+    private Integer notas;
     private Integer peso;
     private Disciplina disciplina;
 
-    public Prova(Integer nota, Integer peso, Disciplina disciplina) {
-        this.nota = nota;
+    public Prova(Integer notas, Integer peso, Disciplina disciplina) {
+        this.notas = notas;
         this.peso = peso;
         this.disciplina = disciplina;
     }
     
-    public Integer getNota() {
-        return nota;
+    public Integer getNotas() {
+        return notas;
     }
 
-    public void setNota(Integer nota) {
-        this.nota = nota;
+    public void setNotas(Integer notas) {
+        this.notas = notas;
     }
 
     public Integer getPeso() {
