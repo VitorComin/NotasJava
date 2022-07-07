@@ -15,7 +15,7 @@ public class Notas {
         this.trabalhos = trabalho;
         this.prova = prova;
     }
-    public Float Nota() {
+    public Float Notas() {
         Integer notaTrabalho = 0;
         Integer notaProva = 0;
         Integer pesoTrabalho = 0;
@@ -25,11 +25,11 @@ public class Notas {
 
 
         for (Trabalho trabalho : this.getTrabalho()) {
-             notaTrabalho += trabalho.getNota().intValue();
+             notaTrabalho += trabalho.getNotas().intValue();
              pesoTrabalho = trabalho.getPeso().intValue();
         }
         for (Prova prova : this.getProva()){
-            notaProva += prova.getNota().intValue();
+            notaProva += prova.getNotas().intValue();
             pesoProva = prova.getPeso().intValue();
         }
 
@@ -41,11 +41,11 @@ public class Notas {
 
     public String retornaStatus(){
         Integer notaFinal = 0;
-        notaFinal = this.getTrabalho().get(0).getNota().intValue() + this.getProva().get(0).getNota().intValue();
+        notaFinal = this.getTrabalho().get(0).getNotas().intValue() + this.getProva().get(0).getNotas().intValue();
         if (notaFinal >= 5) {
-            return "Aprovado!";
+            return "Aprovado";
         } else {
-            return "Reprovado!";
+            return "Reprovado";
         }
 
     }
