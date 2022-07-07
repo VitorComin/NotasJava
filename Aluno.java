@@ -20,13 +20,13 @@ public class Aluno {
         this.nome = nome;
     }
 
-    public Float getNota() {
+    public Float getNotas() {
     
-        return nota;
+        return notas;
     }
 
-    public void setNota(Float nota) {
+    public void setNota(Float notas) {
     
-        this.nota = nota;
+        this.notas = notas;
     }
 }
