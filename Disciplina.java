@@ -31,7 +31,7 @@ public class Disciplina {
         return Notas;
     }
 
-    public void setComposicaoNotas(List<CNotas> Notas) {
+    public void setNotas(List<Notas> Notas) {
         this.Notas = Notas;
     }
 }
